@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+.myButton{
+margin-right: 10px;
+}
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-container {
+  /* background-color: orange; */
+  width: 340px;
+}
+
+.movie-poster {
+  width: 340px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie-summary {
+  margin-top: 0;
+}
+
+.movie-rating {
+  font-size: 18px;
+}
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.add-movie-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding:25px;
+}
+
+.color-game{
+  text-align: left;
+}
+.game-box{
+  /* width: 160px; */
+  height: 160px;
+  background-color: white;
+  color: black;
+  font-size: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+}
+.game-box:hover{
+  cursor: pointer;
+  background-color: hsl(0deg 0% 0%/ 9%);
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 800px;
+}
