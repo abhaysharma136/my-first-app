@@ -11,7 +11,7 @@ export function EditMovie() {
     // const movie = movieList[id];
     const[movie,setMovie]=useState(null)
     const getMovie=()=>{
-      fetch(`${API}/${id}`,{
+      fetch(`${API}/movies/${id}`,{
         method:"GET",
       })
     .then((data)=>data.json())
@@ -47,7 +47,7 @@ function EditMovieForm({movie}){
     //Copy the movieList and add the new movie
     // setMovieList([...movieList, newMovie]);
     // console.log(newMovie);
-    fetch(`${API}/${movie.id}`, 
+    fetch(`${API}/movies/${movie.id}`, 
     {method: "PUT",
   body: JSON.stringify(updatedMovie),
   headers: {"Content-Type": "application/json",

@@ -10,7 +10,7 @@ export function MovieDetails() {
   // const movie = movieList[id];
   const[movie,setMovie]=useState({})
   const getMovie=()=>{
-    fetch(`${API}/${id}`,{
+    fetch(`${API}/movies/${id}`,{
       method:"GET",
     })
   .then((data)=>data.json())
